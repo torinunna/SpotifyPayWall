@@ -13,7 +13,19 @@ import UIKit
 
 class PaywallViewController: UIViewController {
 
-     override func viewDidLoad() {
+    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var pageControl: UIPageControl!
+    
+    let bannerInfos: [BannerInfo] = BannerInfo.list
+    let colors: [UIColor] = [.systemPurple, .systemOrange, .systemPink, .systemRed]
+    
+    override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        presentation: diffable datasource
+        
+//        data: snapshot
+        
+//        layout: compositional layout
     }
 }
